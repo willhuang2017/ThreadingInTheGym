@@ -15,7 +15,7 @@ public class Member {
 
     public List<Exercise> generateRoutine() {
         return IntStream.range(0, 6).mapToObj(_i -> new Exercise()).collect(Collectors.toList());
-    }
+    } 
 
     public void performRoutine() throws InterruptedException {
         List<Exercise> routine = generateRoutine();
